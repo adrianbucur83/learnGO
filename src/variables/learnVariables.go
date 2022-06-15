@@ -53,8 +53,10 @@ func main() {
 	fmt.Printf("%v, %v", students, len(students))
 
 	println("\n_____________")
-	newMap := make(map[string]int)
-	newMap = map[string]int{"key1": 1111}
+	newMap := map[string]int{"key1": 1111, "key2": 4444}
 	fmt.Println(newMap)
+	delete(newMap, "key2")
+	fmt.Println(newMap)
+	fmt.Println(newMap["key2"])
 
 }
